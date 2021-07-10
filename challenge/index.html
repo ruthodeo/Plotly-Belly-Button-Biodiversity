@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belly Button Biodiversity</title>
+  <img class="js-lazy e2e-site-project-module-image image-loaded" src="https://mk0globalbiodefhl3l6.kinstacdn.com/wp-content/uploads/2021/03/tuberculosis-mycobacterium-bacterial-pathogen.jpg"
+  style="padding-top: 10px;
+         padding-bottom: 10px;
+         width: 21%;
+         float: center;
+         clear: both;">
+  <link 
+    rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link 
+  rel ="stylesheet" 
+  href="/challenge/static/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1 style="color:maroon;font-size:60px;">Belly Button Biodiversity Dashboard</h1>
+        <p style="color:midnightblue;font: size 30px;">Use the interactive charts below to explore the dataset</p>
+      </div>     
+    </div>
+  </div>
+  
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <p style="color:darkred;font: size 40px;">This dashboard will provide dynamic and interactive visualizations of the biodiversity found in a test subjects's belly button, The steps are easy, pick the ID number and the graphs bellow are going to show you the results per person</p>
+        <!-- <p>
+        **********************************************************************This dashboard will provide dynamic and interactive visualizations of the biodiversity found in a test subjects's belly button.******************
+        </p> -->
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-2">
+          <div class="well">
+          <h3 style="color:midnightblue;font: size 30px;px;">Test Subject ID No.:</h3>
+          <!-- <h5>Test Subject ID No.:</h5> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <!-- <h3 class="panel-title">Demographic Info</h3> -->
+            <h3 style="color:oldlace;font: size 10px;px;">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+  <div id="plot"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/charts.js"></script>
+</body>
+</html>
+
